@@ -1,0 +1,31 @@
+  Dictionary search coped with md5 in one minute, while brute force coped with md5 in one hour and ten minutes.
+  Both of these methods have decrypted all passwords.
+  I conducted experiments on only a hundred passwords, since I was very limited in time, 
+but if we have a dictionary with the most popular passwords, then the search in the dictionary copes very quickly, 
+respectively, he would decipher most of the words from the dictionary, the question is only in time.
+  The brute-force method copes with the task for a very long time and for a larger number of passwords, 
+the execution time will grow very much in comparison with a dictionary search.
+  From the experiment, we can conclude that dictionary search is much faster. It is only necessary that we have this dictionary.
+  I used 100 passwords for the experiment from a file with 1,000,000 passwords. We managed to decipher all 100.
+  MD5 without salt is a very weak hashing scheme. It is hacked rather quickly, therefore, we can conclude that its reliability is at a low level.
+  Salt combined with any hashing scheme adds to the difficulty of decrypting passwords, however, md5 and sha-1 are still at a low password security level, 
+even with salt.
+  Bcript has proven itself to be a fairly strong hashing scheme, it uses salt by definition, which makes it much more difficult to decrypt passwords. 
+It is also quite problematic to attack this scheme using brute force.
+  In this task, I used a dictionary search attack and brute force attack.
+  In the bcript scheme, it was possible to decrypt quite a few passwords, which indicates its relative security. 
+However, in principle, dictionary search and brute force cope with this task quite well.
+  In this task, I got acquainted with such hashing schemes as md5 sha-1 and bcript. For a real application, among these three, 
+I would use a script, since it is the most secure among these three.
+  In order for passwords to be more or less heavy, you should at least increase their length. 
+Even this simple step makes it harder to crack. The next desirable step is to use uppercase and lowercase English letters and numbers in the password 
+in a rather unpredictable order, but understandable to the user himself. It is best not to include your first or last name or date of birth in your password. 
+As statistics show, a person can memorize from 5 to 9 characters without much difficulty, and if these conditional 7 characters are entered in a random string, 
+this will significantly increase the security of your password. As a conclusion on this point, we can give two main recommendations: 
+1) increase the length of your password up to the maximum length allowed on the site on which you register or the application; 
+2) make the sequence of letters and numbers in the password not too obvious, for example VladimirZhnakin25112001 can be converted to v2Lad5MiR11ZHN11naKin1002.
+And this password is already becoming much more difficult to crack.
+
+A link to the input files used: 
+1)
+2)
